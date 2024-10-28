@@ -1,0 +1,10 @@
+:host ::ng-deep{
+  min-height: 66px;
+  max-height: 66px;
+  flex-grow: 1;
+  padding: 8px 24px;
+  background: green;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}

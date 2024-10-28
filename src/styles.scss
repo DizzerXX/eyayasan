@@ -1,1 +1,33 @@
 /* You can add global styles to this file, and also import other style files */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100vw; /* Full viewport width */
+  height: 100vh; /* Full viewport height */
+  overflow: hidden; /* Prevents scrolling */
+  box-sizing: border-box; /* Consistent sizing */
+  background: blue;
+}
+
+input{
+  min-height: 26px;
+  padding: 0 4px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.button-primary{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 24px;
+  min-height: 26px;
+  color: white;
+  background: black;
+  padding: 0 12px;
+  flex-grow: 1;
+}
