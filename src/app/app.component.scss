@@ -9,10 +9,11 @@
     display: none;
   }
 
-  .content-layout{
+  .body-layout{
     display: flex;
     flex-grow: 1;
     height: 100%;
-    padding: 24px;
+    max-height: calc(100vh - 162px);
   }
+
 }

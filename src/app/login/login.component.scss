@@ -1,15 +1,79 @@
 :host ::ng-deep{
+  display: flex;
+  flex-grow: 1;
+  height: 100%;
+  padding: 24px;
+  max-height: calc(100vh - 162px - 50px);
+
+
+.login-layout{
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 24px;
   border-radius: 24px;
   padding: 24px;
   background: white;
-
+  margin: auto;
+  align-items: center;
+  // width: 80%;
+  max-width: 1024px;
+  // height: 80%;
   .bulletin-board{
-    width: 100%;
-    height: 100%;
-    border: 1px solid black;
+    // width: 100%;
+    // height: 100%;
+    // border: 1px solid black;
+    max-width: 670px;
+
+    img{
+      object-fit: contain;
+    }
+
+    .bulletin-item{
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      display: flex;
+      // height: calc(700px - 48px);
+      padding: 24px;
+      cursor: pointer;
+      transform: scale(1);
+      transition: transform 0.2s ease-in;
+
+      &:hover{
+        transform: scale(1.05);
+        transition: transform 0.2s ease-out;
+      }
+
+      .bulletin-desc{
+        width: 900px;
+        flex-grow: 1;
+        margin: 160px 0 0;
+        background: #00000080;
+        padding: 12px;
+      }
+
+      .bulletin-title{
+
+        font-size: 2rem;
+        color: white;
+        font-weight: 700;
+      }
+
+      .bulletin-snippet{
+        overflow: hidden;
+        /* white-space: nowrap; */
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        height: auto;
+        font-size: 1rem;
+        color: white;
+        font-weight: 500;
+      }
+    }
   }
 
   .login-section{
@@ -26,7 +90,7 @@
       align-items: center;
       justify-content: flex-start;
       border-radius: 8px;
-      width: 100%;
+      width: calc(100% - 24px);
       background-color: darkblue;
       padding: 0 12px;
       color: white;
@@ -39,7 +103,7 @@
       background-color: gray;
       border-radius: 8px;
       padding: 12px;
-      width: 100%;
+      width: calc(100% - 24px);
 
       .login-buttons{
         display: flex;
@@ -51,4 +115,6 @@
       }
     }
   }
+}
+
 }

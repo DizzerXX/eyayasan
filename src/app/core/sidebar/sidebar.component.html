@@ -1,0 +1,17 @@
+<div class="sidebarmenu">
+  <ng-container *ngIf="navItem">
+    <div class="menu-item" *ngFor="let item of navItem">
+      <span class="item-label">{{item.label}}</span>
+      <ng-container *ngIf="item.children">
+        <div class="menu-item-2" *ngFor="let item2 of item.children">
+          <span class="item-label">{{item2.label}}</span>
+          <ng-container *ngIf="item.children">
+            <div *ngFor="let item3 of item2.children">
+              <span class="item-label">{{item3.label}}</span>
+            </div>
+          </ng-container>
+        </div>
+      </ng-container>
+    </div>
+  </ng-container>
+</div>

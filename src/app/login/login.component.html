@@ -1,18 +1,53 @@
-<div class="bulletin-board">
-
-</div>
-<div class="login-section">
-  <span class="login-title">LOG MASUK</span>
-  <div class="login-card">
-    <input type="text" name="userId" placeholder="MyID">
-    <input type="password" name="userPassword" placeholder="Kata Laluan">
-    <div class="login-buttons">
-      <div class="button-primary">Daftar Masuk</div>
-      <div class="button-primary">Lupa Kata Laluan</div>
-    </div>
+<div class="login-layout">
+  <div class="bulletin-board">
+    <swiper-container loop="true" navigation="true" scrollbar="true" autoplay="true">
+      <swiper-slide>
+        <div class="bulletin-item" style="background-image: url('/assets/images/login_bg.png');">
+          <div class="bulletin-desc">
+            <span class="bulletin-title">Title 1</span>
+            <span class="bulletin-snippet">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vehicula arcu eros, eget condimentum dolor ullamcorper sit amet. Pellentesque efficitur vehicula tortor, sit amet maximus velit posuere at. Pellentesque sed placerat leo. Fusce ex leo, porttitor eget venenatis non, elementum vel dui.</span>
+          </div>
+        </div>
+      </swiper-slide>
+      <swiper-slide>
+        <div class="bulletin-item" style="background-image: url('/assets/images/login_bg.png');">
+          <div class="bulletin-desc">
+            <span class="bulletin-title">Title 1</span>
+            <span class="bulletin-snippet">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vehicula arcu eros, eget condimentum dolor ullamcorper sit amet. Pellentesque efficitur vehicula tortor, sit amet maximus velit posuere at. Pellentesque sed placerat leo. Fusce ex leo, porttitor eget venenatis non, elementum vel dui.</span>
+          </div>
+        </div>
+      </swiper-slide>
+      <swiper-slide>
+        <div class="bulletin-item" style="background-image: url('/assets/images/login_bg.png');">
+          <div class="bulletin-desc">
+            <span class="bulletin-title">Title 1</span>
+            <span class="bulletin-snippet">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vehicula arcu eros, eget condimentum dolor ullamcorper sit amet. Pellentesque efficitur vehicula tortor, sit amet maximus velit posuere at. Pellentesque sed placerat leo. Fusce ex leo, porttitor eget venenatis non, elementum vel dui.</span>
+          </div>
+        </div>
+      </swiper-slide>
+      <swiper-slide>
+        <div class="bulletin-item" style="background-image: url('/assets/images/login_bg.png');">
+          <div class="bulletin-desc">
+            <span class="bulletin-title">Title 1</span>
+            <span class="bulletin-snippet">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vehicula arcu eros, eget condimentum dolor ullamcorper sit amet. Pellentesque efficitur vehicula tortor, sit amet maximus velit posuere at. Pellentesque sed placerat leo. Fusce ex leo, porttitor eget venenatis non, elementum vel dui.</span>
+          </div>
+        </div>
+      </swiper-slide>
+    </swiper-container>
   </div>
-  <span class="login-title">PENDAFTARAN PENGGUNA</span>
-  <span class="register-note">
-    <a href="#">Klik di sini</a> unput mendapatkan ID Pengguna bagui melayari system ini.
-  </span>
+  <div class="login-section">
+    <span class="login-title">LOG MASUK</span>
+    <div class="login-card">
+      <input type="text" name="userId" placeholder="MyID">
+      <input type="password" name="userPassword" placeholder="Kata Laluan">
+      <div class="login-buttons">
+        <div class="button-primary" (click)="login()">Daftar Masuk</div>
+        <div class="button-primary">Lupa Kata Laluan</div>
+      </div>
+    </div>
+    <span class="login-title">PENDAFTARAN PENGGUNA</span>
+    <span class="register-note">
+      <a href="#">Klik di sini</a> unput mendapatkan ID Pengguna bagui melayari system ini.
+    </span>
+  </div>
 </div>

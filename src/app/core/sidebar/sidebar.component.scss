@@ -1,0 +1,14 @@
+:host ::ng-deep{
+  max-width: 160px;
+  background: blue;
+  height: 100%;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  left: 0;
+  top: 82px;
+  width: 100%;
+  height: calc(100% - 164px);
+}
